@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: Aller-Bold, Aller;
+        font-size: 766.02px;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m1024,0C458.75,0,0,458.75,0,1024s458.75,1024,1024,1024,1024-458.75,1024-1024S1589.25,0,1024,0Zm0,1945.6c-509.27,0-921.6-412.33-921.6-921.6S514.73,102.4,1024,102.4s921.6,412.33,921.6,921.6-412.33,921.6-921.6,921.6Z"/>
+  <g id="sop_" data-name="sop ">
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(284.81 1229.76)"><tspan x="0" y="0">sop!</tspan></text>
+    </g>
+  </g>
+</svg>
