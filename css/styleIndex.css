@@ -7,10 +7,9 @@
     position: relative;
     width: 100vw;
     height: calc(95vh - 80px);
-    min-height: 45
-    0px;
+    min-height: 45 0px;
     opacity: 15%;
-    filter: blur(0px);
+    filter: blur(1px);
     object-fit: cover;
     z-index: -1;
 }
@@ -88,20 +87,14 @@
 
 .hero .scrollDown {
     position: absolute;
-    top: calc(82vh - 80px);
+    top: calc(95vh - 200px);
     text-align: center;
     width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-family: Gemunu;
-    font-size: 2vw;
-}
-
-@media screen and (max-width: 1024px) {
-    .hero .scrollDown {
-        font-size: 4vw;
-    }
+    font-size: 30px;
 }
 
 .about-us .divLine {
@@ -132,7 +125,7 @@
     .about-us .divLine {
         width: 95vw;
     }
-    
+
     .about-us h1 {
         margin-left: 5vw;
         font-size: 10vw;
@@ -145,6 +138,32 @@
     }
 }
 
-footer {
-    margin-top: 6vw;
+.sop2023 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -webkit-mask-image: linear-gradient(transparent 20%, black, black 80%, transparent);
+    mask-image: linear-gradient(transparent 0%, black, black 75%, transparent);
+}
+
+.sop2023 img {
+    position: absolute;
+    filter: blur(10px);
+    opacity: 20%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+
+
+
+.sopmeetup{
+    margin-top: 5vw;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
 }
