@@ -1,23 +1,29 @@
+.hero {
+    position: relative;
+}
+
 .hero video {
     position: relative;
-    top: -100px;
     width: 100vw;
-    height: 950px;
+    height: calc(95vh - 80px);
     opacity: 15%;
     filter: blur(0px);
     object-fit: cover;
     z-index: -1;
 }
 
-@media screen and (max-width: 1024px) {
-    .hero video {
-        height: calc(500px + 40vw);
-    }
+.hero-container {
+    margin-top: 22vh;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
 }
 
 .hero .welcomeTo {
     position: relative;
-    margin-top: calc(190px + 3vw);
     text-align: center;
     font-family: Microsoft Yi Baiti;
     font-size: 2vw;
@@ -55,15 +61,6 @@
     right: 0;
 }
 
-.hero-container {
-    z-index: 10;
-    position: absolute;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    white-space: nowrap;
-}
-
 @media screen and (max-width: 1024px) {
     .hero-container {
         margin-left: vw;
@@ -88,7 +85,7 @@
 
 .hero .scrollDown {
     position: absolute;
-    top: 727px;
+    top: calc(82vh - 80px);
     text-align: center;
     width: 100vw;
     display: flex;
@@ -100,7 +97,6 @@
 
 @media screen and (max-width: 1024px) {
     .hero .scrollDown {
-        top: calc(400px + 20vw);
         font-size: 4vw;
     }
 }
@@ -112,6 +108,7 @@
     margin-left: auto;
     margin-right: 0;
     width: 76vw;
+    margin-top: calc(6vh + 80px);
 }
 
 .about-us h1 {
