@@ -1,3 +1,4 @@
+/* all general styling */
 :root {
     --background: rgb(34, 34, 34);
     --text: white;
@@ -139,7 +140,6 @@ header h1 {
     gap: 60px;
     list-style: none;
 }
-
 .nav-menu a {
     text-decoration: none;
     font-size: 10pt;
@@ -152,7 +152,29 @@ header h1 {
 }
 
 .navbar img {
-    height: 40px;
+    height: 100%;
+}
+
+.nav-socials {
+    height: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-socials img {
+    position: relative;
+    height: 35%;
+    width: auto;
+    padding: 0;
+}
+
+.vertical-seperator {
+    width: 1px;
+    height: 40%;
+    background-color: white;
+    opacity: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .hamburger {
@@ -209,4 +231,19 @@ header h1 {
     .nav-item{
         margin: 16px 0;
     }
+}
+
+.sopmeetup {
+    padding: 120px;
+}
+
+.sop_meet_image {
+    width: 100%;
+    filter: blur(-1px);
+    filter: drop-shadow(10px);
+}
+
+.footer-container {
+    padding: 100px;
+    background-color: #110818;
 }

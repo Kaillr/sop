@@ -1,3 +1,4 @@
+/* all content inside index */
 .hero {
     position: relative;
 }
@@ -6,6 +7,8 @@
     position: relative;
     width: 100vw;
     height: calc(95vh - 80px);
+    min-height: 45
+    0px;
     opacity: 15%;
     filter: blur(0px);
     object-fit: cover;
