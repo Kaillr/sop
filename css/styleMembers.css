@@ -1,0 +1,84 @@
+.members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(358px, auto));
+    
+
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    row-gap: 30px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member-info {
+    height: 75px;
+    width: 350px;
+    
+    display: flex;
+    gap: 10px;
+    font-family: Gemunu;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.member-info h1 {
+    font-size: 24px;
+    margin-top: -4px;
+}
+
+.member-info img {
+    height: 100%;
+}
+
+.member-info .flag {
+    height: 18px;
+}
+
+.member-info .user-info {
+    display: flex;
+    gap: 5px;
+}
+
+.member-info .outline {
+    position: absolute;
+    height: calc(75px + 8px);
+    width: calc(350px + 8px);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(118, 45, 187);
+    border-width: 4px;
+    border-top: 0;
+    border-left: 0;
+
+    box-sizing: content-box;
+}
+
+.member-info .shadow {
+    height: calc(75px + 8px);
+    width: calc(350px + 8px);
+    background-color: black;
+    opacity: 20%;
+    position: absolute;
+    z-index: -1;
+
+    margin: 6px 0 0 6px;
+    padding: 2px;
+    box-sizing: content-box;
+}
+
+.member-info .status-member {
+    font-family: Gemunu;
+    font-size: 20px;
+    background-color: rgb(118, 45, 187);
+    height: 25px;
+    padding: 0 5px;
+    margin-left: auto;
+    margin-right: -20px;
+    z-index: 10;
+}
+

@@ -9,7 +9,7 @@
     height: calc(95vh - 80px);
     min-height: 45 0px;
     opacity: 15%;
-    filter: blur(1px);
+    filter: blur(0px);
     object-fit: cover;
     z-index: -1;
 }
@@ -97,28 +97,33 @@
     font-size: 30px;
 }
 
+.about-us {
+    display: flex;
+    justify-content: right;
+    margin-top: calc(6vh + 80px);
+    gap: 100px;
+}
+
 .about-us .divLine {
     background-color: rgb(118, 45, 187);
     height: 3px;
     position: relative;
-    margin-left: auto;
-    margin-right: 0;
-    width: 76vw;
-    margin-top: calc(6vh + 80px);
+    float: right;
+    width: 50vw;
 }
 
 .about-us h1 {
     font-family: Gemunu;
-    margin-left: 24vw;
+    margin-left: 0vw;
     font-size: 5vw;
 }
 
 .about-us p {
     margin-top: 5vw;
-    margin-left: 24vw;
+    margin-left: 0vw;
     font-size: 1.5vw;
     font-family: Gemunu;
-    width: 40vw;
+    width: 33vw;
 }
 
 @media screen and (max-width: 1024px) {
@@ -133,8 +138,22 @@
 
     .about-us p {
         margin-left: 5vw;
-        font-size: 4vw;
+        font-size: 3vw;
         width: 62vw;
+    }
+
+    .about-us .twitterWidget {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .about-us h1 {
+        font-size: 15vw;
+    }
+
+    .about-us p {
+        font-size: 4vw;
     }
 }
 

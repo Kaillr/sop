@@ -72,7 +72,7 @@ header {
     top: 0;
     z-index: 1000;
 
-    filter: drop-shadow(0 0 3px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
 }
 
 .navbar {
@@ -108,16 +108,21 @@ header {
     float: left;
 }
 
+.nav-branding a {
+    height: 100%;
+    width: auto;
+}
+
 .nav-branding img {
     height: 100%;
     width: auto;
     margin-right: 5px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
     image-rendering: crisp-edges;
 }
 
 .nav-branding img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 header h1 {
@@ -132,6 +137,7 @@ header h1 {
     align-items: center;
     gap: 60px;
 }
+
 .nav-menu a {
     font-size: 10pt;
     font-family: Aller;
@@ -195,6 +201,7 @@ header h1 {
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -206,14 +213,14 @@ header h1 {
         top: 50px;
         gap: 0;
         flex-direction: column;
-        background-color: #1e1c2042;
+        background-color: #1e1627ad;
         width: 100%;
         text-align: center;
 
         transition: 0.4s;
     }
 
-    .nav-menu.active{
+    .nav-menu.active {
         left: 0;
     }
 
@@ -232,12 +239,14 @@ header h1 {
 }
 
 footer {
+    word-spacing: -3px;
     margin-top: 6vw;
     padding: 80px 13% 70px;
     background-color: #100716;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
+    box-shadow: 0 50vh 0 50vh #100716;
 }
 
 .footer-branding {
@@ -304,8 +313,6 @@ footer {
 }
 
 
-@media (max-width:1690px){
-    footer {
-
-    }
+@media (max-width:1690px) {
+    footer {}
 }
