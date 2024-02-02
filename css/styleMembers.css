@@ -1,28 +1,56 @@
+.content {
+    margin-top: 15vh;
+}
+
+.member-list-header p {
+    font-family: Gemunu;
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+    z-index: 1;
+}
+
+.member-list-header .divLine {
+    width: 100vw;
+    height: 4px;
+    background: linear-gradient(to right, rgb(118, 45, 187) 0%, transparent 50%, rgb(118, 45, 187) 100%);
+    margin-top: -15px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    opacity: 10%;
+    z-index: -1;
+}
+
 .members{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(358px, auto));
-    
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 
-    margin-top: 200px;
     justify-content: center;
-    align-items: center;
-    gap: 3vw;
-    row-gap: 30px;
-    max-width: 1920px;
+    gap: 50px;
+    row-gap: 60px;
+    max-width: 1300px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
-.member-info {
+.member-info {  
+    position: relative;
     height: 75px;
     width: 350px;
     
     display: flex;
     gap: 10px;
     font-family: Gemunu;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 16px;
     margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+    .member-info {
+        transform: scale(0.8);
+        margin-left: 20px;
+    }
 }
 
 .member-info h1 {
@@ -30,17 +58,70 @@
     margin-top: -4px;
 }
 
-.member-info img {
+.member-info .pfp {
     height: 100%;
 }
 
 .member-info .flag {
     height: 18px;
+    width: auto;
+}
+
+.member-info .gamemode-icon {
+    height: 18px;
+    width: 18px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.member-info .icon-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.member-info .name-rank {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
 }
 
 .member-info .user-info {
     display: flex;
     gap: 5px;
+}
+
+.member-info .discord p {
+    text-align: left;
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+.member-info .discord {
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 200px;
+    display: flex;
+    gap: 5px;
+}
+
+.member-info .discord-icon {
+    margin-top: 1px;
+    height: 14px;
+}
+
+.member-info .shadow {
+    height: calc(75px + 8px);
+    width: calc(350px + 8px);
+    background-color: black;
+    opacity: 20%;
+    position: absolute;
+    z-index: -2;
+
+    margin: 6px 0 0 6px;
+    padding: 2px;
+    box-sizing: content-box;
 }
 
 .member-info .outline {
@@ -56,19 +137,55 @@
     border-left: 0;
 
     box-sizing: content-box;
+    z-index: -1;
 }
 
-.member-info .shadow {
+.member-info .outline-owner {
+    position: absolute;
     height: calc(75px + 8px);
     width: calc(350px + 8px);
-    background-color: black;
-    opacity: 20%;
-    position: absolute;
-    z-index: -1;
 
-    margin: 6px 0 0 6px;
-    padding: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F1C40F;
+    border-width: 4px;
+    border-top: 0;
+    border-left: 0;
+
     box-sizing: content-box;
+    z-index: -1;
+}
+
+.member-info .outline-moderator {
+    position: absolute;
+    height: calc(75px + 8px);
+    width: calc(350px + 8px);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E67E22;
+    border-width: 4px;
+    border-top: 0;
+    border-left: 0;
+
+    box-sizing: content-box;
+    z-index: -1;
+}
+
+.member-info .outline-content-manager {
+    position: absolute;
+    height: calc(75px + 8px);
+    width: calc(350px + 8px);
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E91E63;
+    border-width: 4px;
+    border-top: 0;
+    border-left: 0;
+
+    box-sizing: content-box;
+    z-index: -1;
 }
 
 .member-info .status-member {
@@ -82,3 +199,35 @@
     z-index: 10;
 }
 
+.member-info .status-owner {
+    font-family: Gemunu;
+    font-size: 20px;
+    background-color: #F1C40F;
+    height: 25px;
+    padding: 0 5px;
+    margin-left: auto;
+    margin-right: -20px;
+    z-index: 10;
+}
+
+.member-info .status-moderator {
+    font-family: Gemunu;
+    font-size: 20px;
+    background-color: #E67E22;
+    height: 25px;
+    padding: 0 5px;
+    margin-left: auto;
+    margin-right: -20px;
+    z-index: 10;
+}
+
+.member-info .status-content-manager {
+    font-family: Gemunu;
+    font-size: 20px;
+    background-color: #E91E63;
+    height: 25px;
+    padding: 0 5px;
+    margin-left: auto;
+    margin-right: -20px;
+    z-index: 10;
+}

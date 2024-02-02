@@ -132,12 +132,12 @@
     }
 
     .about-us h1 {
-        margin-left: 5vw;
+        margin-left: 0vw;
         font-size: 10vw;
     }
 
     .about-us p {
-        margin-left: 5vw;
+        margin-left: 0vw;
         font-size: 3vw;
         width: 62vw;
     }
@@ -149,11 +149,12 @@
 
 @media screen and (max-width: 512px) {
     .about-us h1 {
-        font-size: 15vw;
+        font-size: 20vw;
     }
 
     .about-us p {
-        font-size: 4vw;
+        font-size: 8vw;
+        width: 90vw;
     }
 }
 
