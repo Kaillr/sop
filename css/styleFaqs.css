@@ -1,0 +1,117 @@
+.content {
+    min-height: 100vh;
+    width: fit-content;
+    max-width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.faqs {
+    font-family: Gemunu;
+    width: 100%;
+    margin-top: 2vw;
+    padding-bottom: 1vw;
+    border-bottom: 2px solid rgb(118, 45, 187);
+    padding-right: 100;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.8vw;
+}
+
+.faqs svg {
+    margin-left: 10px;
+    margin-top: 0.8vw;
+    margin-bottom: auto;
+    min-width: 1.5vw;
+}
+
+.faqs.active svg{
+    transform: rotate(-180deg);
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faqs.active .answer {
+    max-height: fit-content;
+}
+
+.answer p {
+    padding-top: 1vw;
+    line-height: 1.6vw;
+    font-size: 1.4vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        margin-top: 100px;
+    }
+
+    .faqs {
+        width: calc(100vw - 100px);
+        margin-top: 4vw;
+        padding-bottom: 2vw;
+        border-bottom: 2px solid rgb(118, 45, 187);
+        padding-right: 200;
+    }
+
+    .question h3 {
+        font-size: 3.6vw;
+    }
+
+    .faqs svg {
+        margin-left: 20px;
+        margin-top: 1.6vw;
+        min-width: 3vw;
+    }
+
+    .answer p {
+        padding-top: 2vw;
+        line-height: 3.2vw;
+        font-size: 2.8vw;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .content {
+        margin-top: 75px;
+    }
+
+    .faqs {
+        width: calc(100vw - 30px);
+        margin-top: 6vw;
+        padding-bottom: 3vw;
+        border-bottom: 3px solid rgb(118, 45, 187);
+        padding-right: 300;
+    }
+
+    .question h3 {
+        font-size: 5.4vw;
+    }
+
+    .faqs svg {
+        margin-left: 30px;
+        margin-top: 2.4vw;
+        min-width: 4.5vw;
+    }
+
+    .answer p {
+        padding-top: 3vw;
+        line-height: 4.8vw;
+        font-size: 4.2vw;
+    }
+}
