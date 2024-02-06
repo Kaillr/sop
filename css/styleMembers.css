@@ -13,11 +13,33 @@
 .member-list-letter p {
     font-family: Gemunu;
     font-size: 20px;
+    max-width: 1300px;
     margin-top: 60px;
-    text-align: center;
+    text-align: left;
     z-index: 1;
     opacity: 50%;
-    margin-left: -1250px;
+    padding-left: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1350px) {
+    .member-list-letter p {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 900px) {
+    .member-list-letter p {
+        max-width: 400px;
+    }
+
+}
+
+    @media (max-width: 480px) {
+        .member-list-letter p {
+            max-width: calc(404px * 0.8);
+        }
 }
 
 .member-list-header .divLine {
