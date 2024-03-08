@@ -149,12 +149,12 @@
 
 @media screen and (max-width: 512px) {
     .about-us h1 {
-        font-size: 20vw;
+        font-size: 15vw;
     }
 
     .about-us p {
-        font-size: 8vw;
-        width: 90vw;
+        font-size: 4vw;
+        width: 66vw;
     }
 }
 
