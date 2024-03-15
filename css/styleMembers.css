@@ -95,7 +95,10 @@
     font-family: Gemunu;
     margin-left: 16px;
     margin-right: 20px;
+    text-overflow:clip;
 }
+
+
 
 @media (max-width: 480px) {
     .member-info {
