@@ -11,12 +11,15 @@
 </head>
 
 <body>
+
     <div id="grad"></div>
+
     <header>
+        <div id="headerSolid" class="headerSolid"></div>
         <div class="navbar">
             <div class="nav-branding">
-                <a href="/html/index.html"><img src="/images/logo/sopWhiteOutline.svg" class="logo-img"
-                        data-alt-src="/images/logo/sop.svg"></a>
+                <a href="/html/index.html"><img src="/images/logo/sopWhiteOutline.png" class="logo-img"
+                        data-alt-src="/images/logo/sop.png"></a>
                 <h1>shit osu! players</h1>
             </div>
 
@@ -51,6 +54,8 @@
 
     <div class="content">
         <div class="hero">
+            <div class="gradLeft"></div>
+            <div class="gradBottom"></div>
             <div class="hero-container">
                 <h1 class="welcomeTo">Welcome to:</h1>
                 <div class="divLine"></div>
@@ -71,45 +76,87 @@
         <div class="about-us">
 
             <div class="twitterWidget">
-                <a class="twitter-timeline" data-lang="en" data-width="35vw" data-height="460px" data-dnt="true"
+                <a id="twitterTimeline" class="twitter-timeline" data-lang="en" data-width="30vw" data-dnt="true"
                     data-theme="dark" href="https://twitter.com/shitosuplayers?ref_src=twsrc%5Etfw">Tweets by
                     shitosuplayers</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
+            <script>
+                // Function to update the Twitter timeline height
+                function updateTwitterTimelineHeight() {
+                    var twitterTimeline = document.getElementById('twitterTimeline');
+                    var vw = window.innerWidth; // Get the viewport width
+                    var height = vw * 0.462; // Adjust this multiplier as needed
+                    twitterTimeline.setAttribute('data-height', height + 'px');
+                }
+
+                // Calculate and update the height initially
+                updateTwitterTimelineHeight();
+
+                // Recalculate and update the height whenever the window is resized
+                window.addEventListener('resize', updateTwitterTimelineHeight);
+            </script>
+
+
             <div class="about-us-container">
                 <div class="divLine"></div>
                 <h1>about us</h1>
-                <p>sop! Is a gaming community based in Norway. Originally an osu! community but have expanded our
+                <p>Welcome to sop! We're a diverse gaming community based in Norway, originally founded in July 2022.
+                    While we are primarily based around osu!, we also have interests in all varieties of games.<br>
+                    <br>
+                    At sop!, our goal is simple: to provide a welcoming space where gamers can connect, compete, and
+                    have a great time together. Whether you're a casual player or a sweat, there's a place for
+                    you here.<br>
+                    <br>
+                    Join us on Discord to meet new friend, participate in our events, and be part of our growing
+                    community. From small events, to massive tournaments, there's always something exciting happening at
+                    sop!<br>
+                    <br>
+                    Thank you for being a part of sop <3<   /p>
+                        <!-- <p>sop! Is a gaming community based in Norway. Originally an osu! community but have expanded our
                     taste
                     in
-                    games. This community was made in 8th of July 2022 and has been growing ever since. </p>
+                    games. <br><br>This community was made in 8th of July 2022 and has been growing ever since with new
+                    members welcomed by meeting new friends. </p> -->
 
             </div>
         </div>
 
+        <div class="insight">
 
+            <div class="bgContainer">
+                <img class="bg" id="sopMeetupBg" src="/images/20231210_112553.jpg">
+                <video class="bg" id="sopEventsBg" src="/images/video/knockout.mp4" autoplay loop muted></video>
+            </div>
 
-        <div class="sopmeetup">
-            <div class="sop2023">
-                <div class="top-fade"></div>
-                <div class="bot-fade"></div>
-                <img src="/images/sopMeetup2023.jpg" alt="">
+            <div class="section sopMeetup">
+                <div class="image-container">
+                    <div class="imageTag">sop!Meetup 2023 </div>
+                    <img src="/images/sopMeetup2023.jpg" alt="">
+                </div>
+                <p>We plan yearly sop! meetups to get to know each other better. So if you have time, we would love for
+                    you to join us.</p>
+            </div>
+
+            <div class="section sopEvents">
+                <p>We frequently host events such as osu Tournaments, sop!Knockout and much more.
+                    Everyone are welcomed to participate.</p>
+                <div class="image-container">
+                    <div class="imageTag">Regular events</div>
+                    <video src="/images/video/knockout.mp4" autoplay muted loop></video>
+                </div>
             </div>
         </div>
     </div>
 
-
-
-
-
     <footer>
         <div class="footer-content">
             <div class="footer-branding">
-                <img src="/images/logo/sopWhiteOutline.svg" alt="">
+                <img src="/images/logo/sopWhiteOutline.png" alt="">
                 <h1>shit osu! players</h1>
             </div>
-            <p>shit osu! players © 2023 All Rights Reserved</p>
+            <p>shit osu! players © 2024 All Rights Reserved</p>
 
             <div class="socials">
                 <a href="https://discord.gg/Ur7tB2aVwm"><i class='bx bxl-discord-alt'></i></a>
@@ -121,14 +168,14 @@
 
         <div class="footer-content">
             <h4>Information</h4>
-            <li><a href="">something</a></li>
-            <li><a href="">something</a></li>
-            <li><a href="">something</a></li>
+            <li><a href="">coming soon</a></li>
+            <li><a href="">coming soon</a></li>
+            <li><a href="">coming soon</a></li>
         </div>
 
         <div class="footer-content">
             <h4>Upcoming Events</h4>
-            <li><a href="">sop!Meetup 2024 - Summer 2024</a></li>
+            <li><a href="">sop!Meetup 2024</a></li>
             <li><a href=""></a></li>
         </div>
 
@@ -137,8 +184,10 @@
             <li><a href="mailto:shitosuplayers@gmail.com">Email: shitosuplayers@gmail.com</a></li>
             <li><a href="https://discord.gg/Ur7tB2aVwm">Join Our Community</a></li>
         </div>
+    </footer>
 
+    <script src="/js/script.js"></script>
 </body>
-<script src="/js/script.js"></script>
+
 
 </html>

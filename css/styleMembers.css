@@ -5,7 +5,7 @@
 .member-list-header p {
     font-family: Gemunu;
     font-size: 30px;
-    margin-top: 60px;
+    margin-bottom: 60px;
     text-align: center;
     z-index: 1;
 }
@@ -14,7 +14,7 @@
     font-family: Gemunu;
     font-size: 20px;
     max-width: 1300px;
-    margin-top: 60px;
+    margin-bottom: 30px;
     text-align: left;
     z-index: 1;
     opacity: 50%;
@@ -45,11 +45,12 @@
 .member-list-header .divLine {
     width: 100vw;
     height: 4px;
-    background: linear-gradient(to right, rgb(118, 45, 187) 0%, transparent 50%, rgb(118, 45, 187) 100%);
-    margin-top: -15px;
+    background: linear-gradient(to right, var(--sopPurple) 0%, transparent 50%, var(--sopPurple) 100%);
+    margin-top: 15px;
     margin-left: auto;
     opacity: 15%;
     z-index: -1;
+    position: absolute;
 }
 
 .members{
@@ -61,7 +62,7 @@
     row-gap: 60px;
     max-width: 1300px;
     width: auto;
-    margin-top: 60px;
+    margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -95,6 +96,7 @@
     font-family: Gemunu;
     margin-left: 16px;
     margin-right: 20px;
+    margin-bottom: 12px;
     text-overflow:clip;
 }
 
@@ -105,6 +107,13 @@
         transform: scale(0.8);
         margin-left: -20px;
     }
+}
+
+.profileLink {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    user-select: none;
 }
 
 .member-info h1 {
@@ -133,12 +142,14 @@
     flex-direction: column;
     height: 100%;
     position: relative;
+    z-index: -1;
 }
 
 .member-info .name-rank {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    justify-content: space-between;
+    gap: 4px;
 }
 
 .member-info .user-info {
@@ -150,6 +161,7 @@
     text-align: left;
     margin-top: 1px;
     font-size: 14px;
+    user-select: all;
 }
 
 .member-info .discord {
@@ -185,7 +197,7 @@
 
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(118, 45, 187);
+    border-color: var(--sopPurple);
     border-width: 4px;
     border-top: 0;
     border-left: 0;
@@ -245,7 +257,7 @@
 .member-info .status-member {
     font-family: Gemunu;
     font-size: 20px;
-    background-color: rgb(118, 45, 187);
+    background-color: var(--sopPurple);
     height: 25px;
     padding: 0 5px;
     margin-left: auto;

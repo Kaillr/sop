@@ -1,13 +1,23 @@
 /* all content inside index */
 .hero {
     position: relative;
+    width: 100vw;
+    height: calc(95vh - 80px);
 }
+
+.gradLeft {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, black, transparent);
+    opacity: 40%;
+    position: absolute;
+}
+
 
 .hero video {
     position: relative;
     width: 100vw;
     height: calc(95vh - 80px);
-    min-height: 45 0px;
     opacity: 15%;
     filter: blur(0px);
     object-fit: cover;
@@ -35,7 +45,7 @@
 }
 
 .hero .divLine {
-    background-color: rgb(118, 45, 187);
+    background-color: var(--sopPurple);
     height: 3px;
     position: relative;
     width: 40vw;
@@ -52,7 +62,7 @@
 
 .hero .textBox {
     font-family: Gemunu;
-    background-color: rgb(118, 45, 187);
+    background-color: var(--sopPurple);
     margin-top: 1vw;
     text-align: left;
     padding-left: 1vw;
@@ -100,12 +110,12 @@
 .about-us {
     display: flex;
     justify-content: right;
-    margin-top: calc(6vh + 80px);
-    gap: 100px;
+    padding: calc(6vh + 80px) 0;
+    gap: 10vw;
 }
 
 .about-us .divLine {
-    background-color: rgb(118, 45, 187);
+    background-color: var(--sopPurple);
     height: 3px;
     position: relative;
     float: right;
@@ -123,7 +133,19 @@
     margin-left: 0vw;
     font-size: 1.5vw;
     font-family: Gemunu;
+    line-height: 1.5;
     width: 33vw;
+    opacity: 1;
+    transition: transform 1.5s, opacity 1.5s ease-out;
+}
+
+.about-us p.hidden {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.about-us .twitterWidget {
+    display: block;
 }
 
 @media screen and (max-width: 1024px) {
@@ -149,41 +171,105 @@
 
 @media screen and (max-width: 512px) {
     .about-us h1 {
-        font-size: 15vw;
+        font-size: 20vw;
     }
 
     .about-us p {
-        font-size: 4vw;
+        font-size: 8vw;
         width: 66vw;
     }
 }
 
-.sop2023 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.insight {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    font-family: Gemunu;
+    padding: 10vw 0;
+}
+
+.insight .bg {
+    width: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    opacity: 0;
+    position: fixed;
+    z-index: -100;
+    transition: opacity 1s ease-out;
+    mask-image: linear-gradient(to bottom, transparent 10%, black 100%);
+    top: 0;
+}
+
+.insight .section {
+    box-sizing: content-box;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    -webkit-mask-image: linear-gradient(transparent 20%, black, black 80%, transparent);
-    mask-image: linear-gradient(transparent 0%, black, black 75%, transparent);
+    gap: 5vw;
+    height: 20vw;
+    padding: 6vw 16.6vw;
+    font-size: 2vw;
+    line-height: 1.5;
+    text-align: center;
 }
 
-.sop2023 img {
-    position: absolute;
-    filter: blur(10px);
-    opacity: 20%;
-    object-fit: cover;
+.insight .section img, .insight .section video {
     height: 100%;
-    width: 100%;
-    z-index: -10;
+    border: 0.5vw solid var(--sopPurple);
+    border-top: none;
+    border-left: none;
+    box-shadow: 0 0 5vw rgba(255, 255, 255, 0.15);
 }
 
+@media (max-width: 1024px) {
+    .insight .section {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        padding: 30vw 0;
+        margin: 0 auto;
+        font-size: 8vw;
+    }
 
+    .insight .sopEvents {
+        flex-direction: column-reverse;
+    }
 
-.sopmeetup{
-    margin-top: 5vw;
-    height: 100vh;
+    .insight .section img, .insight .section video {
+        width: 100%;
+        height: auto;
+        border: 1vw solid var(--sopPurple);
+        border-top: none;
+        border-left: none;
+    }
+}
+
+.bgContainer {
     width: 100vw;
     display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.imageTag {
+    width: fit-content;
+    position: absolute;
+    padding: 0 10px;
+    background-color: var(--sopPurple);
+    font-size: 20px;
+    margin: -10px -20px 0 0;
+}
+
+.thankYou {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 3vw;
+    padding: 5vw 0vw;
+    /* background-color: var(--sopPurple);
+    box-shadow: inset 0 0 10vw rgba(0, 0, 0, 0.3); */
 }
